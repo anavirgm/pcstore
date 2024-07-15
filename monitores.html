@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TU PC STORE - PERIFÉRICOS</title>
+    <!--Icon-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+	/>
+	<meta name="theme-color" content="#000" />
+
+    <!--Css-->
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+	<nav class="navBar">
+		<div class="container navigation">
+			<a href="./index.html">
+				<div class="logo">
+					<h1>PcStore</h1>
+				</div>
+			</a>
+			<div class="menu">
+				<div class="top">
+					<a href="./index.html">
+						<div class="logo">
+							<h1>PcStore</h1>
+						</div>
+					</a>
+					<div class="close">
+						<i class="bx bx-x"></i>
+					</div>
+				</div>
+				<ul class="list">
+					<li class="item">
+						<a href="./index.html" class="link scroll-link">Inicio</a>
+					</li>
+					<li class="item">
+						<a href="./index.html#hero-content" class="link scroll-link">Productos</a>
+					</li>
+					<li class="item">
+						<a href="./index.html#nosotros" class="link scroll-link">Nosotros</a>
+					</li>
+					<li class="item">
+						<a href="./carrito.html" class="link scroll-link">Carrito</a>
+					</li>
+					<li class="item">
+						<a href="#" class="cart-icon" onclick="toggleCart()">
+							<i class="bx bx-shopping-bag"></i>
+							<span id="cart-count">0</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div id="cart-panel" class="cart-panel">
+				<div class="cart-header">
+					<h2>Carrito</h2>
+					<i class="bx bx-x" onclick="toggleCart()"></i>
+				</div>
+				<div class="cart-content">
+					<!-- Aquí se agregarán los productos -->
+				</div>
+				<div class="cart-footer">
+					<p class="total">Total: <span id="cart-total">$0.00</span></p>
+					<button class="checkout-btn">Checkout</button>
+				</div>
+			</div>
+			<div class="hamburger">
+				<i class="bx bx-menu"></i>
+			</div>
+		</div>
+	</nav>
+
+	<section class="section">
+		<div class="filter">
+            <h1 class="h2">MONITORES</h1>
+            <form id="productForm">
+                <select id="productSelect" name="products" onchange="redirectToPage()">
+                    <option value="monitores.html">Monitores</option>
+                    <option value="pcs.html">Computadoras</option>
+                    <option value="headphone.html">Periféricos</option>
+                    <option value="componentes.html">Componentes</option>
+                </select>
+            </form>
+        </div>
+
+		<div class="productos container">
+			<div class="productos-grid">
+                <div class="images">
+                    <a href="./productos-detalles.html">
+                        <img src="./images/m1.png" alt="">
+                    </a>
+                </div>
+                <div class="productos-text">
+                    <h3>ACER EK271U EBIIP - 27 PULGADAS</h3>
+                    <p>Precio: $280.00</p>
+                    <button class="agregar" onclick="addToCart('product-id-1', 'MONITOR ACER EK271U', 280.00)">Agregar al Carrito</button>
+                </div>
+            </div>
+
+
+			<div class="productos-grid">
+                <div class="images">
+                    <a href="./productos-detalles.html">
+                        <img src="./images/m3.webp" alt="">
+                    </a>
+                </div>
+                <div class="productos-text">
+                    <h3>AOC 24G25PE - 24 PULGADAS</h3>
+                    <p>Precio: $210.00</p>
+                    
+                    <button class="agregar" onclick="addToCart('product-id-2', 'MONITOR AOC 24G25PE', 210.00)">Agregar al Carrito</button>
+                </div>
+            </div>
+
+
+			<div class="productos-grid">
+                <div class="images">
+                    <a href="./productos-detalles.html">
+                        <img src="./images/m2.png" alt="">
+                    </a>
+                </div>
+                <div class="productos-text">
+                    <h3>ACER AMD RADEON 165 HZ, 2K,</h3>
+                    <p>Precio: $310.00</p>
+                    <button class="agregar" onclick="addToCart('product-id-3', 'MONITOR ACER 165HZ', 310.00)">Agregar al Carrito</button>
+                </div>
+            </div>
+
+
+            
+			<div class="productos-grid">
+                <div class="images">
+                    <a href="./productos-detalles.html">
+                        <img src="./images/m3.png" alt="">
+                    </a>
+                </div>
+                <div class="productos-text">
+                    <h3>LENOVO G27-20 - 27 PULGADAS</h3>
+                    <p>Precio: $250.00</p>
+                    <button class="agregar" onclick="addToCart('product-id-4', 'MONITOR LENOVO G27', 250.00)">Agregar al Carrito</button>
+                </div>
+            </div>
+
+
+		</div>
+	</section>
+
+	<section class="pagination">
+		<div class="container">
+			<span>2</span>
+			<span>3</span>
+			<span>4</span>
+			<span>5</span>
+			<span><i class="bx bx-right-arrow-alt"></i></span>
+		</div>
+	</section>
+		<br>
+    <hr>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-conteiner">
+					<p>COPYRIGHT @ <a href="https://www.instagram.com/tupcstoremcbo?igsh=dHowOGVyazk3czdn">PcStore</a> </p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="./js/scripts.js"></script>
+	
+</body>
+
+</html>

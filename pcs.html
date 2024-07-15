@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TU PC STORE - PC'S</title>
+    <!--Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <meta name="theme-color" content="#000" />
+
+    <!--Css-->
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+    <nav class="navBar">
+        <div class="container navigation">
+            <a href="./index.html">
+                <div class="logo">
+                    <h1>PcStore</h1>
+                </div>
+            </a>
+            <div class="menu">
+                <div class="top">
+                    <a href="./index.html">
+                        <div class="logo">
+                            <h1>PcStore</h1>
+                        </div>
+                    </a>
+                    <div class="close">
+                        <i class="bx bx-x"></i>
+                    </div>
+                </div>
+                <ul class="list">
+                    <li class="item">
+                        <a href="./index.html" class="link scroll-link">Inicio</a>
+                    </li>
+					<li class="item">
+						<a href="./index.html#hero-content" class="link scroll-link">Productos</a>
+					</li>
+					<li class="item">
+						<a href="./index.html#nosotros" class="link scroll-link">Nosotros</a>
+					</li>
+                    <li class="item">
+                        <a href="./carrito.html" class="link scroll-link">Carrito</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="cart-icon" onclick="toggleCart()">
+                            <i class="bx bx-shopping-bag"></i>
+                            <span id="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="cart-panel" class="cart-panel">
+                <div class="cart-header">
+                    <h2>Carrito</h2>
+                    <i class="bx bx-x" onclick="toggleCart()"></i>
+                </div>
+                <div class="cart-content">
+                    <!-- Aquí se agregarán los productos -->
+                </div>
+                <div class="cart-footer">
+                    <p class="total">Total: <span id="cart-total">$0.00</span></p>
+                    <button class="checkout-btn">Checkout</button>
+                </div>
+            </div>
+            <div class="hamburger">
+                <i class="bx bx-menu"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="filter">
+            <h1 class="h2">COMPUTADORAS</h1>
+            <form id="productForm">
+                <select id="productSelect" name="products" onchange="redirectToPage()">
+                    <option value="pcs.html">Computadoras</option>
+                    <option value="headphone.html">Periféricos</option>
+                    <option value="componentes.html">Componentes</option>
+                    <option value="monitores.html">Monitores</option>
+                </select>
+            </form>
+        </div>
+
+        <div class="productos container">
+            <div class="productos-grid">
+                <div class="images">
+                    <a href="./productos-detalles.html">
+                        <img src="./images/pc1.webp" alt="">
+                    </a>
+                </div>
+                <div class="productos-text">
+                    <h3>PC PERSONALIZADA – COMBO RYZEN 5 5600G</h3>
+                    <p>Precio: $430.00</p>
+                    <button class="agregar" onclick="addToCart('product-id-1', 'PC RYZEN 5 5600G', 430.00)">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <div class="productos-grid">
+                <div class="images">
+                    <a href="./productos-detalles.html">
+                        <img src="./images/pc2.webp" alt="">
+                    </a>
+                </div>
+                <div class="productos-text">
+                    <h3>PC PERSONALIZADA – INTEL I3 12100F</h3>
+                    <p>Precio: $590.00</p>
+                    <button class="agregar" onclick="addToCart('product-id-2', 'PC INTEL I3 12100F', 590.00)">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <div class="productos-grid">
+                <div class="images">
+                    <a href="./productos-detalles.html">
+                        <img src="./images/pc3.webp" alt="">
+                    </a>
+                </div>
+                <div class="productos-text">
+                    <h3>PC PERSONALIZADA – RYZEN 5 4500</h3>
+                    <p>Precio: $610.00</p>
+                    <button class="agregar" onclick="addToCart('product-id-3', 'PC RYZEN 5 4500', 610.00)">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <div class="productos-grid">
+                <div class="images">
+                    <a href="./productos-detalles.html">
+                        <img src="./images/pc4.webp" alt="">
+                    </a>
+                </div>
+                <div class="productos-text">
+                    <h3>PC PERSONALIZADA – COMBO INTEL I7-7700</h3>
+                    <p>Precio: $560.00</p>
+                    <button class="agregar" onclick="addToCart('product-id-4', 'PC INTEL I7-7700', 560.00)">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <div class="productos-grid">
+                <div class="images">
+                    <a href="./productos-detalles.html">
+                        <img src="./images/pc5.webp" alt="">
+                    </a>
+                </div>
+                <div class="productos-text">
+                    <h3>PC PERSONALIZADA – COMBO RYZEN 7-5700X</h3>
+                    <p>Precio: $1000.00</p>
+                    <button class="agregar" onclick="addToCart('product-id-5', 'PC RYZEN 7-5700X', 1000.00)">Agregar al Carrito</button>
+                </div>
+            </div>
+
+			<div class="productos-grid">
+                <div class="images">
+                    <a href="./productos-detalles.html">
+                        <img src="./images/lap1.webp" alt="">
+                    </a>
+                </div>
+                <div class="productos-text">
+                    <h3>LENOVO, Intel Core I3-1215U, 8gb RAM, 256gb M.2, 15.6″</h3>
+                    <p>Precio: $370.00</p>
+                    <button class="agregar" onclick="addToCart('product-id-6', 'LAPTOP LENOVO I3-12', 370.00)">Agregar al Carrito</button>
+                </div>
+            </div>
+
+			<div class="productos-grid">
+                <div class="images">
+                    <a href="./productos-detalles.html">
+                        <img src="./images/lap2.webp" alt="">
+                    </a>
+                </div>
+                <div class="productos-text">
+                    <h3>ACER, RYZEN 5-7520U, 16gb RAM, 512gb M.2, 15.6″</h3>
+                    <p>Precio: $430.00</p>
+                    <button class="agregar" onclick="addToCart('product-id-7', 'LAPTOP ACER RYZEN 5-7520U', 430.00)">Agregar al Carrito</button>
+                </div>
+            </div>
+        
+
+		<div class="productos-grid">
+			<div class="images">
+				<a href="./productos-detalles.html">
+					<img src="./images/lap3.webp" alt="">
+				</a>
+			</div>
+			<div class="productos-text">
+				<h3>HP RYZEN 5-5625U, 8gb RAM, 128gb M.2, 17.3 FHD″</h3>
+				<p>Precio: $500.00</p>
+				<button class="agregar" onclick="addToCart('product-id-8', 'LAPTOP HP RYZEN 5-5625U', 500.00)">Agregar al Carrito</button>
+			</div>
+		</div>
+
+		<div class="productos-grid">
+			<div class="images">
+				<a href="./productos-detalles.html">
+					<img src="./images/lap4.webp" alt="">
+				</a>
+			</div>
+			<div class="productos-text">
+				<h3>LENOVO Intel Core I7-11 VA, 8gb RAM, 256gb M.2, 17.3″</h3>
+				<p>Precio: $480.00</p>
+				<button class="agregar" onclick="addToCart('product-id-9', 'LAPTOP LENOVO I7-11', 480.00)">Agregar al Carrito</button>
+			</div>
+		</div>
+	</div>
+    </section>
+
+    <section class="pagination">
+        <div class="container">
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span><i class="bx bx-right-arrow-alt"></i></span>
+        </div>
+    </section>
+    <br>
+    <hr>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-conteiner">
+                <p>COPYRIGHT @ <a href="https://www.instagram.com/tupcstoremcbo?igsh=dHowOGVyazk3czdn">PcStore</a> </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

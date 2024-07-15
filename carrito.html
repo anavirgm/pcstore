@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON DEV - CARRITO</title>
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <meta name="theme-color" content="#000" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+    <nav class="navBar">
+        <div class="container navigation">
+            <a href="./index.html">
+                <div class="logo">
+                    <h1>PcStore</h1>
+                </div>
+            </a>
+            <div class="menu">
+                <div class="top">
+                    <a href="./index.html">
+                        <div class="logo">
+                            <h1>PcStore</h1>
+                        </div>
+                    </a>
+                    <div class="close">
+                        <i class="bx bx-x"></i>
+                    </div>
+                </div>
+                <ul class="list">
+                    <li class="item">
+                        <a href="./index.html" class="link scroll-link">Inicio</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link scroll-link">Productos</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link scroll-link">Carrito</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link scroll-link">Nosotros</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link icon">
+                            <i class="bx bx-shopping-bag"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="cart-icon">
+                <i class="bx bx-shopping-bag"></i>
+            </a>
+            <div class="hamburger">
+                <i class="bx bx-menu"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container cart">
+        <table>
+            <tr>
+                <th>Productos</th>
+                <th>Cantidad</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="./images/pro3.png" alt="" />
+                        <div>
+                            <p>IPHONE</p>
+                            <span>Precio: $101.00</span>
+                            <br />
+                            <a href="#">remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <input type="number" value="1">
+                </td>
+                <td>
+                    $101.00
+                </td>
+            </tr>
+            <!-- Más filas para otros productos -->
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$200</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$350</td>
+                </tr>
+            </table>
+            <a href="#" class="checkout btn">Procesar Pedido por WhatsApp</a>
+        </div>
+    </div>
+
+    <hr />
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <p>
+                    COPYRIGHT @
+                    <a href="https://www.instagram.com/tupcstoremcbo?igsh=dHowOGVyazk3czdn">PcStore</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
