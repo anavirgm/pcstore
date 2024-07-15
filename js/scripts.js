@@ -111,3 +111,15 @@ function toggleCart() {
     const cartPanel = document.getElementById('cart-panel');
     cartPanel.classList.toggle('open');
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const productLinks = document.querySelectorAll('.productos-grid .images a');
+
+    productLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            const productId = link.getAttribute('href').split('id=')[1];
+            window.location.href = `./productos-detalles.html?id=${productId}`;
+        });
+    });
+});

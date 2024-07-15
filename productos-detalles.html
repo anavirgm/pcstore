@@ -1,276 +1,490 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!--Icon-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-	/>
-	<meta name="theme-color" content="#000" />
 
-    <!--Css-->
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body class="fondo-detalles">
-    <nav class="navBar">
-      <div class="container navigation">
-        <a href="./index.html">
-          <div class="logo">
-            <h1>PcStore</h1>
-          </div>
-        </a>
-        <div class="menu">
-          <div class="top">
-            <a href="./index.html">
-              <div class="logo">
-                <h1>PcStore</h1>
-              </div></a
-            >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!--Icon-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <meta name="theme-color" content="#000" />
 
-            <div class="close">
-              <i class="bx bx-x"></i>
-            </div>
-          </div>
+  <!--Css-->
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
 
-          <ul class="list">
-            <li class="item">
-              <a href="./index.html" class="link scroll-link">Inicio</a>
-            </li>
-            <li class="item">
-              <a href="#" class="link scroll-link">Productos</a>
-            </li>
-            <li class="item">
-              <a href="./carrito.html" class="link scroll-link">Carrito</a>
-            </li>
-            <li class="item">
-              <a href="#" class="link scroll-link">Nosotros</a>
-            </li>
-            <li class="item">
-              <a href="#" class="link icon">
-                <i class="bx bx-shopping-bag"></i>
-              </a>
-            </li>
-          </ul>
+<body class="fondo-detalles">
+  <nav class="navBar">
+    <div class="container navigation">
+      <a href="./index.html">
+        <div class="logo">
+          <h1>PcStore</h1>
         </div>
-        <a href="#" class="cart-icon">
-          <i class="bx bx-shopping-bag"></i>
-        </a>
-        <div class="hamburger">
-          <i class="bx bx-menu"></i>
+      </a>
+      <div class="menu">
+        <div class="top">
+          <a href="./index.html">
+            <div class="logo">
+              <h1>PcStore</h1>
+            </div>
+          </a>
+          <div class="close">
+            <i class="bx bx-x"></i>
+          </div>
         </div>
+        <ul class="list">
+          <li class="item">
+            <a href="./index.html" class="link scroll-link">Inicio</a>
+          </li>
+          <li class="item">
+            <a href="./index.html#hero-content" class="link scroll-link">Productos</a>
+          </li>
+          <li class="item">
+            <a href="./index.html#nosotros" class="link scroll-link">Nosotros</a>
+          </li>
+          <li class="item">
+            <a href="#" class="cart-icon" onclick="toggleCart()">
+              <i class="bx bx-shopping-bag"></i>
+              <span id="cart-count">0</span>
+            </a>
+          </li>
+        </ul>
       </div>
-    </nav>
-
-    <!--PRODUCTOS DETALLES-->
-
-    <section class="productos-detalles">
-      <div class="detalles container">
-        <div class="left">
-          <div class="main">
-            <img src="./images/pro3.png" alt="" />
-          </div>
-          <div class="imgBoxs">
-            <div class="imgBox">
-              <img src="./images/pro4.png" alt="" />
-            </div>
-            <div class="imgBox">
-              <img src="./images/pro2.png" alt="" />
-            </div>
-            <div class="imgBox">
-              <img src="./images/pro3.png" alt="" />
-            </div>
-            <div class="imgBox">
-              <img src="./images/pro5.png" alt="" />
-            </div>
-          </div>
-				</div>
-				<div class="right">
-					<span>Productos/Promoción</span>
-					<h1>IPHONE</h1>
-					<div class="price">$50</div>
-					<form>
-						<div>
-							<select>
-								<option value="cantidad">
-									1
-								</option>
-								<option value="1">2</option>
-								<option value="1">3</option>
-								<option value="1">4</option>
-								<option value="1">5</option>
-								<option value="1">6</option>
-								<option value="1">7</option>
-								<option value="1">8</option>
-								<option value="1">9</option>
-								<option value="1">10</option>
-							</select>
-						</div>
-					</form>
-					<form class="form">
-						<a href="./carrito.html" class="addCarrito">Añadir al carrito</a>
-						<h3>Detalles del Productos</h3>
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate soluta quibusdam ad, ab ea consectetur?</p>
-						<br>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptate vero quam, iure porro reiciendis esse ut aspernatur deserunt amet optio eum enim alias incidunt. Consectetur minima vero veniam exercitationem?</p>
-					</form>
-				</div>
-      </div>
-		</section>
-		
-		<!--Productos Relacionados-->
-
-		<section class="container relacionados">
-			<div class="titles">Productos Relacionados</div>
-			<div class="productos">
-				<div class="productos-grid">
-					<div class="images">
-						<a href="./productos-detalles.html">
-							<img src="./images/pro3.png" alt="">
-						</a>
-					</div>
-					<div class="productos-text">
-						<h3>Title</h3>
-					</div>
-					<p>Precio: $121.00</p>
-				</div>
-				<div class="productos-grid">
-					<div class="images">
-						<a href="./productos-detalles.html">
-							<img src="./images/pro3.png" alt="">
-						</a>
-					</div>
-					<div class="productos-text">
-						<h3>Title</h3>
-					</div>
-					<p>Precio: $121.00</p>
-				</div>
-				<div class="productos-grid">
-					<div class="images">
-						<a href="./productos-detalles.html">
-							<img src="./images/pro3.png" alt="">
-						</a>
-					</div>
-					<div class="productos-text">
-						<h3>Title</h3>
-					</div>
-					<p>Precio: $121.00</p>
-				</div>
-				<div class="productos-grid">
-					<div class="images">
-						<a href="./productos-detalles.html">
-							<img src="./images/pro3.png" alt="">
-						</a>
-					</div>
-					<div class="productos-text">
-						<h3>Title</h3>
-					</div>
-					<p>Precio: $121.00</p>
-				</div>
-			</div>
-		</section>
-
-		<br><br>
-		<section>
-			<div class="titles container comment">Comentarios</div>
-			<div class="comentarios-center">
-				<div class="comentarios">
-					<span>&ldquo;</span>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minus ex cupiditate quo itaque? Natus veritatis amet repudiandae ipsum ab itaque alias officiis placeat atque ea, pariatur quis omnis maxime.</p>
-					<div class="rating">
-						<i class="bx bxs-star"></i>
-						<i class="bx bxs-star"></i>
-						<i class="bx bxs-star"></i>
-						<i class="bx bxs-star"></i>
-						<i class="bx bx-star"></i>
-					</div>
-					<div class="img-cover">
-						<img src="./images/img1.jpg" alt="">
-					</div>
-					<h4>Json dev</h4>
-				</div>
-
-				<div class="comentarios">
-					<span>&ldquo;</span>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minus ex cupiditate quo itaque? Natus veritatis amet repudiandae ipsum ab itaque alias officiis placeat atque ea, pariatur quis omnis maxime.</p>
-					<div class="rating">
-						<i class="bx bxs-star"></i>
-						<i class="bx bxs-star"></i>
-						<i class="bx bxs-star"></i>
-						<i class="bx bxs-star"></i>
-						<i class="bx bx-star"></i>
-					</div>
-					<div class="img-cover">
-						<img src="./images/img2.jpg" alt="">
-					</div>
-					<h4>Json dev</h4>
-				</div>
-
-				<div class="comentarios">
-					<span>&ldquo;</span>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minus ex cupiditate quo itaque? Natus veritatis amet repudiandae ipsum ab itaque alias officiis placeat atque ea, pariatur quis omnis maxime.</p>
-					<div class="rating">
-						<i class="bx bxs-star"></i>
-						<i class="bx bxs-star"></i>
-						<i class="bx bxs-star"></i>
-						<i class="bx bxs-star"></i>
-						<i class="bx bx-star"></i>
-					</div>
-					<div class="img-cover">
-						<img src="./images/img3.jpg" alt="">
-					</div>
-					<h4>Json dev</h4>
-				</div>
-
-				<div class="comentarios">
-					<span>&ldquo;</span>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minus ex cupiditate quo itaque? Natus veritatis amet repudiandae ipsum ab itaque alias officiis placeat atque ea, pariatur quis omnis maxime.</p>
-					<div class="rating">
-						<i class="bx bxs-star"></i>
-						<i class="bx bxs-star"></i>
-						<i class="bx bxs-star"></i>
-						<i class="bx bxs-star"></i>
-						<i class="bx bx-star"></i>
-					</div>
-					<div class="img-cover">
-						<img src="./images/img4.jpg" alt="">
-					</div>
-					<h4>Json dev</h4>
-				</div>
-
-				<div class="comentarios">
-					<span>&ldquo;</span>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minus ex cupiditate quo itaque? Natus veritatis amet repudiandae ipsum ab itaque alias officiis placeat atque ea, pariatur quis omnis maxime.</p>
-					<div class="rating">
-						<i class="bx bxs-star"></i>
-						<i class="bx bxs-star"></i>
-						<i class="bx bxs-star"></i>
-						<i class="bx bxs-star"></i>
-						<i class="bx bx-star"></i>
-					</div>
-					<div class="img-cover">
-						<img src="./images/img1.jpg" alt="">
-					</div>
-					<h4>Json dev</h4>
-				</div>
-			</div>
-		</section>
-
-    <hr />
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-conteiner">
-          <p>
-            COPYRIGHT @
-            <a href="https://www.instagram.com/tupcstoremcbo?igsh=dHowOGVyazk3czdn">PcStore</a>
-          </p>
+      <div id="cart-panel" class="cart-panel">
+        <div class="cart-header">
+          <h2>Carrito</h2>
+          <i class="bx bx-x" onclick="toggleCart()"></i>
+        </div>
+        <div class="cart-content">
+          <!-- Aquí se agregarán los productos -->
+        </div>
+        <div class="cart-footer">
+          <p class="total">Total: <span id="cart-total">$0.00</span></p>
+          <button class="checkout-btn">Checkout</button>
         </div>
       </div>
-    </footer>
+      <div class="hamburger">
+        <i class="bx bx-menu"></i>
+      </div>
+    </div>
+  </nav>
 
-    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
-    <script src="./js/scripts.js"></script>
-  </body>
+  <!--PRODUCTOS DETALLES-->
+  <section class="productos-detalles">
+    <div class="detalles container">
+      <div class="left">
+        <div class="main">
+          <img id="product-image" src="" alt="" />
+        </div>
+        <div class="imgBoxs" id="product-thumbnails">
+          <!-- Thumbnails se agregarán aquí -->
+        </div>
+      </div>
+      <div class="right">
+        <a id="product-category" href="">Categoria</a>
+        <h1 id="product-name"></h1>
+        <div class="price" id="product-price"></div>
+        <form>
+          <div>
+            <select>
+              <option value="cantidad">1</option>
+              <option value="cantidad">2</option>
+              <option value="cantidad">3</option>
+              <option value="cantidad">4</option>
+              <option value="cantidad">5</option>
+              <option value="cantidad">6</option>
+              <option value="cantidad">7</option>
+              <option value="cantidad">8</option>
+              <option value="cantidad">9</option>
+              <option value="cantidad">10</option>
+              <!-- ... otras opciones ... -->
+            </select>
+          </div>
+        </form>
+        <form class="form">
+          <a href="./carrito.html" class="addCarrito" id="add-to-cart">Añadir al carrito</a>
+          <h3>Detalles del Producto</h3>
+          <p id="product-description"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!--Productos Relacionados-->
+
+  <section class="container relacionados">
+    <div class="titles">Productos Relacionados</div>
+    <div class="productos">
+      <div class="productos-grid">
+        <div class="images">
+          <a href="./productos-detalles.html">
+            <img src="./images/pro3.png" alt="">
+          </a>
+        </div>
+        <div class="productos-text">
+          <h3>Title</h3>
+        </div>
+        <p>Precio: $121.00</p>
+      </div>
+      <div class="productos-grid">
+        <div class="images">
+          <a href="./productos-detalles.html">
+            <img src="./images/pro3.png" alt="">
+          </a>
+        </div>
+        <div class="productos-text">
+          <h3>Title</h3>
+        </div>
+        <p>Precio: $121.00</p>
+      </div>
+      <div class="productos-grid">
+        <div class="images">
+          <a href="./productos-detalles.html">
+            <img src="./images/pro3.png" alt="">
+          </a>
+        </div>
+        <div class="productos-text">
+          <h3>Title</h3>
+        </div>
+        <p>Precio: $121.00</p>
+      </div>
+      <div class="productos-grid">
+        <div class="images">
+          <a href="./productos-detalles.html">
+            <img src="./images/pro3.png" alt="">
+          </a>
+        </div>
+        <div class="productos-text">
+          <h3>Title</h3>
+        </div>
+        <p>Precio: $121.00</p>
+      </div>
+    </div>
+  </section>
+
+  <br><br>
+
+
+  <hr />
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-conteiner">
+        <p>
+          COPYRIGHT @
+          <a href="https://www.instagram.com/tupcstoremcbo?igsh=dHowOGVyazk3czdn">PcStore</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+  <script src="./js/scripts.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const productId = urlParams.get('id');
+
+      const products = {
+        'product-id-1': {
+          name: 'MONITOR ACER EK271U',
+          category: 'Monitores',
+          url: 'monitores.html',
+          price: 280.00,
+          description: '100 Hz \nPANEL IPS \n27 PULGADAS \nRESOLUCION 2K \n1 MS DE RESPUESTA',
+          images: ['./images/m1.png', './images/m2.png', './images/m3.png']
+        },
+
+        'product-id-2': {
+          name: 'MONITOR AOC 24G25PE',
+          category: 'Monitores',
+          price: 210.00,
+          description: '165 HZ \nPANEL IPS \n24 PULGADAS \nRESOLUCION 1080P \n1 MS DE RESPUESTA',
+          images: ['./images/m3.webp', './images/m2.png', './images/m3.png']
+        },
+
+        'product-id-3': {
+          name: 'MONITOR ACER NITRO',
+          category: 'Monitores',
+          price: 310.00,
+          description: 'ACER \n165 HZ \nPANEL IPS \n27 PULGADAS \nRESOLUCION 2K \nQHD Wide 1440p \nTECNOLOGIA AMD RADEON FREESYNC',
+          images: ['./images/m2.png', './images/m3.webp', './images/m3.png']
+        },
+
+        'product-id-4': {
+          name: 'MONITOR LENOVO G27',
+          category: 'Monitores',
+          price: 250.00,
+          description: '144 Hz \nPANEL IPS \n27 PULGADAS \nRESOLUCION 1080P \n1 MS DE RESPUESTA',
+          images: ['./images/m3.png', './images/m3.webp', './images/m2.png']
+        },
+
+
+        //PERIFERICOS
+
+        'product-id-5': {
+          name: 'AUDIFONOS PATRIOT VIPER V330',
+          category: 'Audífonos',
+          price: 25.00,
+          description: 'Detalles de los audífonos Patriot Viper V330...',
+          images: ['./images/au1.webp', './images/ms1.webp', './images/tec1.webp']
+        },
+        'product-id-6': {
+          name: 'AUDIFONOS PATRIOT VIPER V360',
+          category: 'Audífonos',
+          price: 40.00,
+          description: 'Detalles de los audífonos Patriot Viper V360...',
+          images: ['./images/au2.webp', './images/ms1.webp', './images/tec1.webp']
+        },
+        'product-id-7': {
+          name: 'AUDIFONOS HYPERX STINGER CORE',
+          category: 'Audífonos',
+          price: 65.00,
+          description: 'Detalles de los audífonos HyperX Stinger Core...',
+          images: ['./images/au3.webp']
+        },
+        'product-id-8': {
+          name: 'TECLADO AOC GK500 – SWITCH AZUL',
+          category: 'Teclados',
+          price: 45.00,
+          description: 'Detalles del teclado AOC GK500 con switch azul...',
+          images: ['./images/tec1.webp']
+        },
+        'product-id-9': {
+          name: 'TECLADO MECANICO KITCOM NK30',
+          category: 'Teclados',
+          price: 35.00,
+          description: 'Detalles del teclado mecánico Kitcom NK30...',
+          images: ['./images/tec2.webp']
+        },
+        'product-id-10': {
+          name: 'MOUSE GAMER EVGA X12',
+          category: 'Mouse',
+          price: 35.00,
+          description: 'Detalles del mouse gamer EVGA X12...',
+          images: ['./images/ms1.webp']
+        },
+        'product-id-11': {
+          name: 'MOUSE GAMER LOGITECH G502 CON MOUSEPAD G240',
+          category: 'Mouse',
+          price: 55.00,
+          description: 'Detalles del mouse gamer Logitech G502 con mousepad G240...',
+          images: ['./images/ms2.webp']
+        },
+        'product-id-13': {
+          name: 'Mouse Gamer EVGA X20 INALAMBRICO',
+          category: 'Mouse',
+          price: 45.00,
+          description: 'Detalles del mouse gamer EVGA X20 inalámbrico...',
+          images: ['./images/ms3.webp']
+        },
+        'product-id-14': {
+          name: 'Mousepad XL Dragon Twice',
+          category: 'Mousepads',
+          price: 15.00,
+          description: 'Detalles del mousepad XL Dragon Twice...',
+          images: ['./images/ms4.webp']
+        },
+
+        //COMPONENTES
+
+        'product-id-15': {
+          name: 'SSD P210 SATA 3 256GB',
+          category: 'Componentes',
+          price: 27.00,
+          description: '256GB SSD \nSATA 3 \n2.5 Pulgadas \nAlta velocidad',
+          images: ['./images/c2.webp']
+        },
+        'product-id-16': {
+          name: 'NETAC M.2 500GB',
+          category: 'Componentes',
+          price: 50.00,
+          description: '500GB \nM.2 NV5000 \nDisipador de aluminio',
+          images: ['./images/c3.webp']
+        },
+        'product-id-17': {
+          name: 'SSD AORUS Gen4 2TB',
+          category: 'Componentes',
+          price: 180.00,
+          description: '2TB \nNVMe PCI-Express 4.0 X4 \nAlta velocidad \nModelo AORUS Gen4 7000s',
+          images: ['./images/c4.webp']
+        },
+        'product-id-18': {
+          name: 'DISIPADOR LOVING COOL',
+          category: 'Componentes',
+          price: 17.00,
+          description: 'Disipador de torre \nRGB \n90TDP',
+          images: ['./images/c5.webp']
+        },
+        'product-id-19': {
+          name: 'DISIPADOR ML240L RGB V2',
+          category: 'Enfriamiento',
+          price: 100.00,
+          description: 'Sistema de enfriamiento líquido \nRGB \nModelo ML240L V2',
+          images: ['./images/c6.webp']
+        },
+        'product-id-20': {
+          name: 'KIT DE VENTILADORES ROSEWILL',
+          category: 'Enfriamiento',
+          price: 45.00,
+          description: 'Kit de ventiladores \nARGB \nModelo X5',
+          images: ['./images/c7.webp']
+        },
+        'product-id-21': {
+          name: 'Socket AMD AM4 Ryzen',
+          category: 'Placas base',
+          price: 110.00,
+          description: 'B450M/AC \nSocket AMD AM4 \nSoporte DDR4 3200MHz',
+          images: ['./images/c8.png']
+        },
+        'product-id-22': {
+          name: 'PLACA BASE AMD AM4',
+          category: 'Placas base',
+          price: 90.00,
+          description: 'Placa base ATX \nSoporte DDR4 3200MHz \nAMD AM4',
+          images: ['./images/c9.webp']
+        },
+        'product-id-23': {
+          name: 'GIGABYTE, TARJETA MADRE B550',
+          category: 'Placas base',
+          price: 145.00,
+          description: 'Tarjeta madre \nModelo B550 UD AC \nSoporte USB 3.2 Gen 2',
+          images: ['./images/c10.webp']
+        },
+
+        'product-id-24': {
+          name: 'PC RYZEN 5 5600G',
+          category: 'PCs',
+          price: 430.00,
+          description: 'PC Personalizada \nProcesador Ryzen 5 5600G \nAlto rendimiento',
+          images: ['./images/pc1.webp']
+        },
+        'product-id-25': {
+          name: 'PC INTEL I3 12100F',
+          category: 'PCs',
+          price: 590.00,
+          description: 'PC Personalizada \nProcesador Intel i3 12100F \nAlta eficiencia',
+          images: ['./images/pc2.webp']
+        },
+        'product-id-26': {
+          name: 'PC RYZEN 5 4500',
+          category: 'PCs',
+          price: 610.00,
+          description: 'PC Personalizada \nProcesador Ryzen 5 4500 \nDesempeño confiable',
+          images: ['./images/pc3.webp']
+        },
+        'product-id-27': {
+          name: 'PC INTEL I7-7700',
+          category: 'PCs',
+          price: 560.00,
+          description: 'PC Personalizada \nProcesador Intel i7-7700 \nAlta velocidad',
+          images: ['./images/pc4.webp']
+        },
+        'product-id-28': {
+          name: 'PC RYZEN 7-5700X',
+          category: 'PCs',
+          price: 1000.00,
+          description: 'PC Personalizada \nProcesador Ryzen 7-5700X \nRendimiento extremo',
+          images: ['./images/pc5.webp']
+        },
+        'product-id-29': {
+          name: 'LAPTOP LENOVO I3-12',
+          category: 'Laptops',
+          price: 370.00,
+          description: 'Lenovo \nIntel Core i3-1215U \n8GB RAM \n256GB M.2 \n15.6 pulgadas',
+          images: ['./images/lap1.webp']
+        },
+        'product-id-30': {
+          name: 'LAPTOP ACER RYZEN 5-7520U',
+          category: 'Laptops',
+          price: 430.00,
+          description: 'Acer \nRyzen 5-7520U \n16GB RAM \n512GB M.2 \n15.6 pulgadas',
+          images: ['./images/lap2.webp']
+        },
+        'product-id-31': {
+          name: 'LAPTOP HP RYZEN 5-5625U',
+          category: 'Laptops',
+          price: 500.00,
+          description: 'HP \nRyzen 5-5625U \n8GB RAM \n128GB M.2 \n17.3 pulgadas FHD',
+          images: ['./images/lap3.webp']
+        },
+        'product-id-32': {
+          name: 'LAPTOP LENOVO I7-11',
+          category: 'Laptops',
+          price: 480.00,
+          description: 'Lenovo \nIntel Core i7-11 VA \n8GB RAM \n256GB M.2 \n17.3 pulgadas',
+          images: ['./images/lap4.webp']
+        }
+      };
+
+      if (productId && products[productId]) {
+        const product = products[productId];
+        document.getElementById('product-name').innerText = product.name;
+        document.getElementById('product-category').innerText = product.category;
+        document.getElementById('product-price').innerText = `$${product.price}`;
+        document.getElementById('product-description').innerText = product.description;
+        document.getElementById('product-image').src = product.images[0];
+
+        const thumbnailsContainer = document.getElementById('product-thumbnails');
+        product.images.forEach(image => {
+          const imgBox = document.createElement('div');
+          imgBox.classList.add('imgBox');
+          const img = document.createElement('img');
+          img.src = image;
+          imgBox.appendChild(img);
+          thumbnailsContainer.appendChild(imgBox);
+        });
+
+        document.getElementById('add-to-cart').addEventListener('click', (event) => {
+          event.preventDefault();
+          addToCart(productId, product.name, product.price);
+        });
+      } else {
+        // Manejar el caso de un ID de producto no válido
+        alert('Producto no encontrado');
+      }
+
+
+      /*
+      function displayProductDetails(productId) {
+  if (productId && products[productId]) {
+    const product = products[productId];
+    document.getElementById('product-name').innerText = product.name;
+    document.getElementById('product-category').innerText = product.category;
+    document.getElementById('product-price').innerText = `$${product.price.toFixed(2)}`;
+    document.getElementById('product-description').innerText = product.description;
+    document.getElementById('product-image').src = product.images[0];
+
+    // Actualizar el enlace de la categoría
+    const categoryElement = document.getElementById('product-category');
+    categoryElement.innerText = product.category;
+    categoryElement.href = product.url;
+
+    const thumbnailsContainer = document.getElementById('product-thumbnails');
+    thumbnailsContainer.innerHTML = '';
+    product.images.forEach(image => {
+      const imgBox = document.createElement('div');
+      imgBox.classList.add('imgBox');
+      const img = document.createElement('img');
+      img.src = image;
+      imgBox.appendChild(img);
+      thumbnailsContainer.appendChild(imgBox);
+    });
+
+    document.getElementById('add-to-cart').addEventListener('click', (event) => {
+      event.preventDefault();
+      addToCart(productId, product.name, product.price);
+    });
+  } else {
+    // Manejar el caso de un ID de producto no válido
+    alert('Producto no encontrado');
+  }
+}
+
+displayProductDetails('product-id-1');
+      */
+    });
+  </script>
+</body>
+
 </html>
