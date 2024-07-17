@@ -18,7 +18,7 @@
     <div class="container navigation">
       <a href="./index.html">
         <div class="logo">
-          <h1>PcStore</h1>
+          <img src="./images/pcstore.png" alt="logo" class="logo-img" />
         </div>
       </a>
       <div class="menu">
@@ -90,14 +90,6 @@
               <option value="cantidad">1</option>
               <option value="cantidad">2</option>
               <option value="cantidad">3</option>
-              <option value="cantidad">4</option>
-              <option value="cantidad">5</option>
-              <option value="cantidad">6</option>
-              <option value="cantidad">7</option>
-              <option value="cantidad">8</option>
-              <option value="cantidad">9</option>
-              <option value="cantidad">10</option>
-              <!-- ... otras opciones ... -->
             </select>
           </div>
         </form>
@@ -118,48 +110,39 @@
     <div class="productos">
       <div class="productos-grid">
         <div class="images">
-          <a href="./productos-detalles.html">
-            <img src="./images/pro3.png" alt="">
+          <a href="./productos-detalles.html?id=product-id-31">
+            <img src="./images/lap3.webp" alt="">
           </a>
         </div>
         <div class="productos-text">
-          <h3>Title</h3>
+          <h3>PC PERSONALIZADA – RYZEN 5 4500</h3>
+          <p>Precio: $610.00</p>
+
         </div>
-        <p>Precio: $121.00</p>
       </div>
       <div class="productos-grid">
         <div class="images">
-          <a href="./productos-detalles.html">
-            <img src="./images/pro3.png" alt="">
+          <a href="./productos-detalles.html?id=product-id-13">
+            <img src="./images/ms3.webp" alt="">
           </a>
         </div>
         <div class="productos-text">
-          <h3>Title</h3>
+          <h3>Mouse Gamer EVGA X20 INALAMBRICO</h3>
         </div>
-        <p>Precio: $121.00</p>
+        <p>Precio: $45.00</p>
       </div>
       <div class="productos-grid">
         <div class="images">
-          <a href="./productos-detalles.html">
-            <img src="./images/pro3.png" alt="">
+          <a href="./productos-detalles.html?id=product-id-9">
+            <img src="./images/tec2.webp" alt="">
           </a>
         </div>
         <div class="productos-text">
-          <h3>Title</h3>
+          <h3>TECLADO MECANICO KITCOM NK30</h3>
         </div>
-        <p>Precio: $121.00</p>
+        <p>Precio: $35.00</p>
       </div>
-      <div class="productos-grid">
-        <div class="images">
-          <a href="./productos-detalles.html">
-            <img src="./images/pro3.png" alt="">
-          </a>
-        </div>
-        <div class="productos-text">
-          <h3>Title</h3>
-        </div>
-        <p>Precio: $121.00</p>
-      </div>
+
     </div>
   </section>
 
@@ -169,11 +152,38 @@
   <hr />
   <footer class="footer">
     <div class="container">
-      <div class="footer-conteiner">
-        <p>
-          COPYRIGHT @
-          <a href="https://www.instagram.com/tupcstoremcbo?igsh=dHowOGVyazk3czdn">PcStore</a>
-        </p>
+      <div class="footer-container">
+        <div class="footer-column">
+          <div class="logo">
+            <img src="./images/logoblanco.png" alt="logo" class="logo-img" />
+          </div>
+          <p>¡Arma con nosotros la PC de tus sueños!</p>
+          <p>
+            <img src="images/ig.png" alt="Instagram Icon" class="footer-icon">
+            <a href="https://www.instagram.com/tupcstoremcbo?igsh=dHowOGVyazk3czdn" target="_blank">@tupcstoremcbo</a>
+          </p>
+
+        </div>
+        <div class="footer-column">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Políticas de privacidad</a></li>
+            <li><a href="#">Preguntas Frecuentes (FAQ)</a></li>
+            <li><a href="#">Uso de Datos</a></li>
+            <li><a href="#">Politica de Reembolso</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Atención al cliente</h3>
+          <a href="http://wa.me/584246720472">+58 424-6720472</span> </a>
+          <h3>Ubicanos</h3>
+          <p>C.C Gran Bazar</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <a href="https://www.instagram.com/tupcstoremcbo?igsh=dHowOGVyazk3czdn" target="_blank">PcStore</a> - All
+          right reserved.</p>
       </div>
     </div>
   </footer>
@@ -227,65 +237,66 @@
           name: 'AUDIFONOS PATRIOT VIPER V330',
           category: 'Audífonos',
           price: 25.00,
-          description: 'Detalles de los audífonos Patriot Viper V330...',
+          description: 'Diseño ergonómico \nCalidad de sonido superior \nMicrófono integrado \nConectividad 3.5mm \nCompatibilidad multiplataforma',
           images: ['./images/au1.webp', './images/ms1.webp', './images/tec1.webp']
         },
         'product-id-6': {
           name: 'AUDIFONOS PATRIOT VIPER V360',
           category: 'Audífonos',
           price: 40.00,
-          description: 'Detalles de los audífonos Patriot Viper V360...',
+          description: 'Sonido envolvente 7.1 \nIluminación RGB \nMicrófono con cancelación de ruido \nConectividad USB \nAlmohadillas de cuero sintético',
           images: ['./images/au2.webp', './images/ms1.webp', './images/tec1.webp']
         },
         'product-id-7': {
           name: 'AUDIFONOS HYPERX STINGER CORE',
           category: 'Audífonos',
           price: 65.00,
-          description: 'Detalles de los audífonos HyperX Stinger Core...',
-          images: ['./images/au3.webp']
+          description: 'Compatibilidad multiplataforma \nMicrófono con cancelación de ruido \nControladores direccionales de 40mm \nDiadema ajustable \nLigero y cómodo',
+          images: ['./images/au3.webp', './images/ms1.webp', './images/tec1.webp']
         },
         'product-id-8': {
           name: 'TECLADO AOC GK500 – SWITCH AZUL',
           category: 'Teclados',
           price: 45.00,
-          description: 'Detalles del teclado AOC GK500 con switch azul...',
-          images: ['./images/tec1.webp']
+          description: 'Interruptores mecánicos azules \nIluminación RGB \nTeclas anti-ghosting \nDiseño ergonómico \nDurabilidad de 50 millones de pulsaciones',
+          images: ['./images/tec1.webp', './images/ms1.webp', './images/tec1.webp']
         },
         'product-id-9': {
           name: 'TECLADO MECANICO KITCOM NK30',
           category: 'Teclados',
           price: 35.00,
-          description: 'Detalles del teclado mecánico Kitcom NK30...',
-          images: ['./images/tec2.webp']
+          description: 'Interruptores mecánicos rojos \nIluminación LED \nTeclas multimedia \nConstrucción resistente \nCable trenzado',
+          images: ['./images/tec2.webp', './images/ms1.webp', './images/tec1.webp']
         },
         'product-id-10': {
           name: 'MOUSE GAMER EVGA X12',
           category: 'Mouse',
           price: 35.00,
-          description: 'Detalles del mouse gamer EVGA X12...',
-          images: ['./images/ms1.webp']
+          description: 'Detalles del mouse gamer EVGA X12: \nSensor óptico de alta precisión \nIluminación RGB \nBotones programables \nErgonómico para diestros \nDPI ajustable hasta 16000',
+          images: ['./images/ms1.webp', './images/ms1.webp', './images/tec1.webp']
         },
         'product-id-11': {
           name: 'MOUSE GAMER LOGITECH G502 CON MOUSEPAD G240',
           category: 'Mouse',
           price: 55.00,
-          description: 'Detalles del mouse gamer Logitech G502 con mousepad G240...',
-          images: ['./images/ms2.webp']
+          description: 'Sensor HERO 25K \n11 botones programables \nPeso ajustable \nIluminación LIGHTSYNC RGB \nIncluye mousepad G240 de superficie suave',
+          images: ['./images/ms2.webp', './images/ms1.webp', './images/tec1.webp']
         },
         'product-id-13': {
           name: 'Mouse Gamer EVGA X20 INALAMBRICO',
           category: 'Mouse',
           price: 45.00,
-          description: 'Detalles del mouse gamer EVGA X20 inalámbrico...',
-          images: ['./images/ms3.webp']
+          description: 'Conectividad inalámbrica y cableada \nSensor óptico de alta precisión \nIluminación RGB \nBotones programables \nDPI ajustable hasta 16000',
+          images: ['./images/ms3.webp', './images/ms1.webp', './images/tec1.webp']
         },
         'product-id-14': {
           name: 'Mousepad XL Dragon Twice',
           category: 'Mousepads',
           price: 15.00,
-          description: 'Detalles del mousepad XL Dragon Twice...',
-          images: ['./images/ms4.webp']
+          description: 'Superficie de tela de alta precisión \nBase de goma antideslizante \nBordes cosidos duraderos \nTamaño extra grande \nIdeal para juegos y trabajo',
+          images: ['./images/ms4.webp', './images/ms1.webp', './images/tec1.webp']
         },
+
 
         //COMPONENTES
 
@@ -444,46 +455,6 @@
         // Manejar el caso de un ID de producto no válido
         alert('Producto no encontrado');
       }
-
-
-      /*
-      function displayProductDetails(productId) {
-  if (productId && products[productId]) {
-    const product = products[productId];
-    document.getElementById('product-name').innerText = product.name;
-    document.getElementById('product-category').innerText = product.category;
-    document.getElementById('product-price').innerText = `$${product.price.toFixed(2)}`;
-    document.getElementById('product-description').innerText = product.description;
-    document.getElementById('product-image').src = product.images[0];
-
-    // Actualizar el enlace de la categoría
-    const categoryElement = document.getElementById('product-category');
-    categoryElement.innerText = product.category;
-    categoryElement.href = product.url;
-
-    const thumbnailsContainer = document.getElementById('product-thumbnails');
-    thumbnailsContainer.innerHTML = '';
-    product.images.forEach(image => {
-      const imgBox = document.createElement('div');
-      imgBox.classList.add('imgBox');
-      const img = document.createElement('img');
-      img.src = image;
-      imgBox.appendChild(img);
-      thumbnailsContainer.appendChild(imgBox);
-    });
-
-    document.getElementById('add-to-cart').addEventListener('click', (event) => {
-      event.preventDefault();
-      addToCart(productId, product.name, product.price);
-    });
-  } else {
-    // Manejar el caso de un ID de producto no válido
-    alert('Producto no encontrado');
-  }
-}
-
-displayProductDetails('product-id-1');
-      */
     });
 
   </script>

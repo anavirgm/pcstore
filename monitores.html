@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TU PC STORE - PERIFÉRICOS</title>
-    <!--Icon-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-	/>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TU PC STORE - PERIFÉRICOS</title>
+	<!--Icon-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
 	<meta name="theme-color" content="#000" />
 
-    <!--Css-->
-    <link rel="stylesheet" href="./css/styles.css" />
+	<!--Css-->
+	<link rel="stylesheet" href="./css/styles.css" />
 </head>
+
 <body>
 	<nav class="navBar">
 		<div class="container navigation">
 			<a href="./index.html">
 				<div class="logo">
-					<h1>PcStore</h1>
+					<img src="./images/pcstore.png" alt="logo" class="logo-img" />
 				</div>
 			</a>
 			<div class="menu">
@@ -72,16 +71,16 @@
 
 	<section class="section">
 		<div class="filter">
-            <h1 class="h2">MONITORES</h1>
-            <form id="productForm">
-                <select id="productSelect" name="products" onchange="redirectToPage()">
-                    <option value="monitores.html">Monitores</option>
-                    <option value="pcs.html">Computadoras</option>
-                    <option value="headphone.html">Periféricos</option>
-                    <option value="componentes.html">Componentes</option>
-                </select>
-            </form>
-        </div>
+			<h1 class="h2">MONITORES</h1>
+			<form id="productForm">
+				<select id="productSelect" name="products" onchange="redirectToPage()">
+					<option value="monitores.html">Monitores</option>
+					<option value="pcs.html">Computadoras</option>
+					<option value="headphone.html">Periféricos</option>
+					<option value="componentes.html">Componentes</option>
+				</select>
+			</form>
+		</div>
 
 		<div class="productos container">
 			<div class="productos-grid">
@@ -93,54 +92,58 @@
 				<div class="productos-text">
 					<h3>ACER EK271U EBIIP - 27 PULGADAS</h3>
 					<p>Precio: $280.00</p>
-					<button class="agregar" onclick="addToCart('product-id-1', 'MONITOR ACER EK271U', 280.00)">Agregar al Carrito</button>
+					<button class="agregar" onclick="addToCart('product-id-1', 'MONITOR ACER EK271U', 280.00)">Agregar
+						al Carrito</button>
 				</div>
 			</div>
-			
 
-
-			<div class="productos-grid">
-                <div class="images">
-                    <a href="./productos-detalles.html?id=product-id-2">
-                        <img src="./images/m3.webp" alt="">
-                    </a>
-                </div>
-                <div class="productos-text">
-                    <h3>AOC 24G25PE - 24 PULGADAS</h3>
-                    <p>Precio: $210.00</p>
-                    
-                    <button class="agregar" onclick="addToCart('product-id-2', 'MONITOR AOC 24G25PE', 210.00)">Agregar al Carrito</button>
-                </div>
-            </div>
 
 
 			<div class="productos-grid">
-                <div class="images">
-                    <a href="./productos-detalles.html?id=product-id-3">
-                        <img src="./images/m2.png" alt="">
-                    </a>
-                </div>
-                <div class="productos-text">
-                    <h3>ACER NITRO AMD RADEON 165 HZ, 2K</h3>
-                    <p>Precio: $310.00</p>
-                    <button class="agregar" onclick="addToCart('product-id-3', 'MONITOR ACER NITRO', 310.00)">Agregar al Carrito</button>
-                </div>
-            </div>
+				<div class="images">
+					<a href="./productos-detalles.html?id=product-id-2">
+						<img src="./images/m3.webp" alt="">
+					</a>
+				</div>
+				<div class="productos-text">
+					<h3>AOC 24G25PE - 24 PULGADAS</h3>
+					<p>Precio: $210.00</p>
+
+					<button class="agregar" onclick="addToCart('product-id-2', 'MONITOR AOC 24G25PE', 210.00)">Agregar
+						al Carrito</button>
+				</div>
+			</div>
 
 
-            
 			<div class="productos-grid">
-                <div class="images">
-                    <a href="./productos-detalles.html?id=product-id-4">
-                        <img src="./images/m3.png" alt="">
-                    </a>
-                </div>
-                <div class="productos-text">
-                    <h3>LENOVO G27-20 - 27 PULGADAS</h3>
-                    <p>Precio: $250.00</p>
-                    <button class="agregar" onclick="addToCart('product-id-4', 'MONITOR LENOVO G27', 250.00)">Agregar al Carrito</button>
-                </div>
-            </div>
+				<div class="images">
+					<a href="./productos-detalles.html?id=product-id-3">
+						<img src="./images/m2.png" alt="">
+					</a>
+				</div>
+				<div class="productos-text">
+					<h3>ACER NITRO AMD RADEON 165 HZ, 2K</h3>
+					<p>Precio: $310.00</p>
+					<button class="agregar" onclick="addToCart('product-id-3', 'MONITOR ACER NITRO', 310.00)">Agregar al
+						Carrito</button>
+				</div>
+			</div>
+
+
+
+			<div class="productos-grid">
+				<div class="images">
+					<a href="./productos-detalles.html?id=product-id-4">
+						<img src="./images/m3.png" alt="">
+					</a>
+				</div>
+				<div class="productos-text">
+					<h3>LENOVO G27-20 - 27 PULGADAS</h3>
+					<p>Precio: $250.00</p>
+					<button class="agregar" onclick="addToCart('product-id-4', 'MONITOR LENOVO G27', 250.00)">Agregar al
+						Carrito</button>
+				</div>
+			</div>
 
 
 		</div>
@@ -155,19 +158,50 @@
 			<span><i class="bx bx-right-arrow-alt"></i></span>
 		</div>
 	</section>
-		<br>
-    <hr>
-		<footer class="footer">
-			<div class="container">
-				<div class="footer-conteiner">
-					<p>COPYRIGHT @ <a href="https://www.instagram.com/tupcstoremcbo?igsh=dHowOGVyazk3czdn">PcStore</a> </p>
+	<br>
+	<hr>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-container">
+				<div class="footer-column">
+					<div class="logo">
+						<img src="./images/logoblanco.png" alt="logo" class="logo-img" />
+					</div>
+					<p>¡Arma con nosotros la PC de tus sueños!</p>
+					<p>
+						<img src="images/ig.png" alt="Instagram Icon" class="footer-icon">
+						<a href="https://www.instagram.com/tupcstoremcbo?igsh=dHowOGVyazk3czdn"
+							target="_blank">@tupcstoremcbo</a>
+					</p>
+
+				</div>
+				<div class="footer-column">
+					<h3>Links</h3>
+					<ul>
+						<li><a href="#">Términos y condiciones</a></li>
+						<li><a href="#">Políticas de privacidad</a></li>
+						<li><a href="#">Preguntas Frecuentes (FAQ)</a></li>
+						<li><a href="#">Uso de Datos</a></li>
+						<li><a href="#">Politica de Reembolso</a></li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<h3>Atención al cliente</h3>
+					<a href="http://wa.me/584246720472">+58 424-6720472</span> </a>
+					<h3>Ubicanos</h3>
+					<p>C.C Gran Bazar</p>
 				</div>
 			</div>
-		</footer>
+			<div class="footer-bottom">
+				<p>© <a href="https://www.instagram.com/tupcstoremcbo?igsh=dHowOGVyazk3czdn" target="_blank">PcStore</a>
+					- All right reserved.</p>
+			</div>
+		</div>
+	</footer>
 
-		<script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
-    <script src="./js/scripts.js"></script>
-	
+	<script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+	<script src="./js/scripts.js"></script>
+
 </body>
 
 </html>
